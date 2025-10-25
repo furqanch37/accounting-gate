@@ -1,0 +1,17 @@
+/* Fade-in on scroll */
+.fade-anim{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease;transition-delay:var(--fade-delay,0s)}
+.fade-anim.is-in{opacity:1;transform:translateY(0)}
+
+/* Flowing vertical lines overlay (hero) */
+.lines-overlay{position:absolute;inset:0;opacity:.25;pointer-events:none}
+.lines-overlay .line{position:absolute;width:1px;height:100%;top:0;background:linear-gradient(180deg,transparent,#ffffff,transparent);animation:floatLine 10s ease-in-out infinite}
+.lines-overlay .l1{left:10%;animation-delay:0s}
+.lines-overlay .l2{left:22%;animation-delay:1s}
+.lines-overlay .l3{left:34%;animation-delay:2s}
+.lines-overlay .l4{left:46%;animation-delay:3s}
+.lines-overlay .l5{left:58%;animation-delay:4s}
+.lines-overlay .l6{left:70%;animation-delay:5s}
+.lines-overlay .l7{left:82%;animation-delay:6s}
+.lines-overlay .l8{left:94%;animation-delay:7s}
+
+@keyframes floatLine{0%,100%{transform:translateY(0);opacity:.25}50%{transform:translateY(-12px);opacity:.4}}

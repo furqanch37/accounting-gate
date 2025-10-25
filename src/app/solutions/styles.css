@@ -1,0 +1,50 @@
+.sl-root{background:linear-gradient(180deg,#ffffff 0%,#f1f2f5 30%,#f1f2f5 100%);padding:56px 16px 72px}
+.sl-wrap{max-width:1160px;margin:0 auto;text-align:center}
+.sl-heading{font-size:36px;line-height:1.25;margin:0 0 16px;color:#0f172a;font-weight:800}
+
+.sl-tabs{display:inline-flex;gap:10px;background:#f3f4f6;border-radius:999px;padding:6px;box-shadow:inset 0 0 0 1px #e5e7eb}
+.sl-tab{height:36px;padding:0 14px;border-radius:999px;background:#fff;border:1px solid transparent;color:#111;font-weight:600}
+.sl-tab.is-active{background:#fff;border-color:#e5e7eb;box-shadow:0 2px 8px rgba(16,24,40,.12)}
+
+.sl-panel{margin-top:28px;background:#eeeff4;border-radius:20px;padding:32px 24px 28px;box-shadow:inset 0 0 0 1px #e1e5ec}
+.sl-panel-alt{background:#e9ebf1}
+.sl-eyebrow{color:#ff4d4d;font-weight:700;letter-spacing:.14em;margin-bottom:10px}
+.sl-title{font-size:34px;line-height:1.3;margin:0 0 8px;color:#111827;font-weight:800}
+.sl-sub{max-width:760px;margin:0 auto 14px;color:#4b5563}
+.sl-cta{margin-top:14px}
+.sl-btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 20px;border-radius:999px;color:#fff;text-decoration:none;background:linear-gradient(180deg,#151a2b 0%,#0e1220 100%);box-shadow:0 12px 22px rgba(11,14,25,.28),0 2px 4px rgba(11,14,25,.14),inset 0 0 0 1px rgba(255,255,255,.08);font-weight:700}
+
+/* onboarding layout */
+.sl-stage{position:relative;margin-top:22px;padding:28px 18px 12px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;align-items:center}
+.sl-rail{position:absolute;left:50%;top:8px;bottom:18px;width:1px;background:#e3e5ea;transform:translateX(-50%)}
+.sl-left,.sl-right{display:flex;flex-direction:column;gap:56px}
+.sl-center{display:flex;flex-direction:column;align-items:center;gap:12px}
+.sl-card{width:100%;max-width:520px;height:220px;border-radius:18px;background:#fff;box-shadow:0 10px 28px rgba(16,24,40,.12),inset 0 0 0 1px #e9ecf2;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}
+.sl-card-chip{position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);background:#fff;border:1px solid #e5e7eb;border-radius:999px;padding:8px 14px;color:#555;box-shadow:0 4px 12px rgba(16,24,40,.14)}
+.sl-card-illus{width:80%;height:60%;border-radius:12px;background:linear-gradient(90deg,rgba(255,179,0,.35),rgba(255,106,0,.35),rgba(229,0,58,.35));filter:blur(2px)}
+.sl-note{font-size:12px;color:#6b7280}
+.sl-bottom-icon{width:34px;height:34px;border-radius:50%;background:#ff6a00;box-shadow:0 2px 6px rgba(16,24,40,.18);position:relative}
+.sl-bottom-icon:after{content:"";position:absolute;inset:9px;background:#fff;border-radius:3px;transform:skewX(-8deg)}
+
+.sl-tag{position:relative;display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid #e5e7eb;border-radius:999px;padding:8px 14px 8px 14px;box-shadow:0 2px 10px rgba(16,24,40,.10)}
+.sl-tag-icon{position:absolute;right:-16px;top:50%;transform:translateY(-50%);width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;background:#ff6a00;color:#fff;border-radius:8px;box-shadow:0 0 0 3px #fff}
+.sl-tag-text{color:#374151}
+.sl-tag-ok{margin-left:8px;display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:#f3f4f6;color:#111;border:1px solid #e5e7eb}
+
+/* tax layout */
+.sl-tax-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:28px;margin-top:26px;align-items:center}
+.sl-tax-illus{position:relative;height:260px;border-radius:12px;overflow:hidden;background:#ebebee;box-shadow:0 6px 18px rgba(16,24,40,.12),inset 0 0 0 1px #e9ecf2}
+.sl-tax-img{object-fit:contain;object-position:center center}
+.sl-tax-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;text-align:left}
+.sl-li{display:flex;gap:10px;align-items:flex-start}
+.sl-li-icon{width:28px;height:28px;border-radius:8px;background:#ff6a00;color:#fff;display:inline-flex;align-items:center;justify-content:center;margin-top:2px}
+.sl-li-text{color:#374151}
+
+@media (max-width: 980px){
+  .sl-heading{font-size:28px}
+  .sl-stage{grid-template-columns:1fr;gap:16px}
+  .sl-rail{display:none}
+  .sl-left,.sl-right{flex-direction:column;gap:10px;order:2}
+  .sl-center{order:1}
+  .sl-tax-grid{grid-template-columns:1fr}
+}
