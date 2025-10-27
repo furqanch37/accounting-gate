@@ -9,7 +9,7 @@ export default function SolutionsTabs() {
   const [tab, setTab] = useState("onboarding");
 
   return (
-    <section className="sl-root">
+    <section className="sl-root fade-anim" data-delay="0.12s">
       <div className="sl-wrap">
         <h2 className="sl-heading fade-anim" data-delay="0s">Two Powerful Solutions.<br />One Seamless Experience.</h2>
 

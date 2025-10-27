@@ -3,7 +3,7 @@ import "./styles.css";
 
 export default function Why() {
   return (
-    <section className="why-root">
+    <section className="why-root fade-anim" data-delay="0.08s">
       <div className="why-wrap">
         <div className="why-eyebrow">Why Practice Gateway Exists</div>
         <h2 className="why-title">Free Your Team from Admin.<br />Focus on What Matters.</h2>

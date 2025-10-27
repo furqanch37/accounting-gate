@@ -12,7 +12,7 @@ export default function Trusted() {
   ];
 
   return (
-    <section className="tr-root">
+    <section className="tr-root fade-anim" data-delay="0.06s">
       <div className="tr-wrap">
         <h2 className="tr-title fade-anim" data-delay="0s">Trusted by Leading<br />UK Accountancy Firms</h2>
         <p className="tr-sub fade-anim" data-delay=".08s">Used by top UK accounting firms, from independent practices to large organisations – Practice Gateway helps teams work faster, smarter, and with greater compliance.</p>

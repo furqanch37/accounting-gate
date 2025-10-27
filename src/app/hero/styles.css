@@ -1,7 +1,8 @@
-.hero{background:linear-gradient(180deg,#f8f8f9 0%, #ffffff 60%);padding:72px 16px 88px}
+
+.hero{background: transparent; padding:72px 16px 88px}
 .hero-wrap{max-width:980px;margin:0 auto;text-align:center}
 .hero-eyebrow{font-size:14px;font-weight:700;letter-spacing:.14em;color:#ff4d4d;margin-bottom:16px}
-.hero-title{font-size:56px;line-height:1.1;margin:0 0 16px;color:#151a2b;font-weight:800;text-shadow:0 6px 18px rgba(16,24,40,.08)}
+.hero-title{font-size:56px;line-height:1.1;margin:0 0 16px;color:#151a2b;font-weight:800}
 .hero-sub{max-width:820px;margin:0 auto;color:#4b5563;font-size:18px;line-height:1.6}
 .hero-cta{margin-top:28px}
 .hero-btn{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 24px;border-radius:999px;color:#fff;text-decoration:none;background:linear-gradient(180deg,#151a2b 0%,#0e1220 100%);box-shadow:0 10px 30px rgba(20,24,40,.18),inset 0 0 0 1px rgba(255,255,255,.08);font-weight:700}

@@ -3,7 +3,7 @@ import "./styles.css";
 
 export default function Hero() {
   return (
-    <section className="hero" style={{position:'relative', overflow:'hidden'}}>
+    <section className="hero fade-anim" data-delay="0s" style={{position:'relative', overflow:'hidden'}}>
       <div className="lines-overlay" aria-hidden="true">
         <span className="line l1"/>
         <span className="line l2"/>
