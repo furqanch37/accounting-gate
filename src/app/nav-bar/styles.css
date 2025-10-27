@@ -32,9 +32,10 @@
 .nb-shell {
   width: 100%;
   max-width: 1160px;
-  border-radius: 22px;
+  border-radius: 26px;
   background: #fff;
-  box-shadow: 0 6px 24px rgba(16, 24, 40, .08);
+  border: 1px solid #eef0f3;
+  box-shadow: 0 4px 16px rgba(16, 24, 40, .06);
   position: relative;
   z-index: 1;
   margin: 16px auto;
@@ -45,10 +46,10 @@
 .nb-shell::before {
   content: "";
   position: absolute;
-  top: -30px;
-  right: -30px;
-  width: 560px;
-  height: 220px;
+  top: -12px;
+  right: -12px;
+  width: clamp(320px, 40vw, 720px);
+  height: clamp(140px, 18vw, 260px);
   background: url('/assests/bg-temp.png') top right / contain no-repeat;
   pointer-events: none;
   z-index: 0;
@@ -165,7 +166,8 @@
 .nb-panel-bullet:hover{background:#f5f6f7}
 
 .nb-cta-wrap {
-  margin-left: 18px
+  margin-left: 18px;
+  position: relative
 }
 
 .nb-cta {
@@ -180,6 +182,20 @@
   background: linear-gradient(180deg, #151a2b 0%, #0e1220 100%);
   box-shadow: 0 4px 14px rgba(20, 24, 40, .25), inset 0 0 0 1px rgba(255, 255, 255, .08);
   font-weight: 600
+}
+
+/* Decorative gradient backplate behind CTA to mimic design */
+.nb-cta-wrap::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: -6px;
+  width: calc(100% + 24px);
+  height: 56px;
+  background: linear-gradient(90deg, #ffb300 0%, #ff6a00 50%, #e5003a 100%);
+  filter: saturate(110%);
+  border-radius: 999px;
+  z-index: -1;
 }
 
 .nb-cta:active {

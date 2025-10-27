@@ -17,14 +17,23 @@ export default function Trusted() {
         <h2 className="tr-title fade-anim" data-delay="0s">Trusted by Leading<br />UK Accountancy Firms</h2>
         <p className="tr-sub fade-anim" data-delay=".08s">Used by top UK accounting firms, from independent practices to large organisations – Practice Gateway helps teams work faster, smarter, and with greater compliance.</p>
 
-        <div className="tr-logos fade-anim" data-delay=".14s">
-          {brands.map((b) => (
-            <div key={b.name} className="tr-logo">
-              {/* If the image isn't present, fallback to brand text */}
-              <LogoImage src={b.src} alt={b.name} className="tr-img" />
-              <span className="tr-fallback">{b.name}</span>
-            </div>
-          ))}
+        <div className="tr-scroll-container fade-anim" data-delay=".14s">
+          <div className="tr-scroll-track">
+            {/* First set of logos */}
+            {brands.map((b, idx) => (
+              <div key={`brand-1-${idx}`} className="tr-logo">
+                <LogoImage src={b.src} alt={b.name} className="tr-img" />
+                <span className="tr-fallback">{b.name}</span>
+              </div>
+            ))}
+            {/* Duplicate set for seamless loop */}
+            {brands.map((b, idx) => (
+              <div key={`brand-2-${idx}`} className="tr-logo">
+                <LogoImage src={b.src} alt={b.name} className="tr-img" />
+                <span className="tr-fallback">{b.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

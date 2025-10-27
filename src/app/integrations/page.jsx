@@ -25,12 +25,21 @@ export default function Integrations() {
           Re-Keying and Keep Workflows Flowing
         </h2>
 
-        <div className="int-logos">
-          {logos.map((l) => (
-            <div className="int-logo" key={l.name}>
-              <Image src={l.src} alt={l.name} fill className="int-img" />
-            </div>
-          ))}
+        <div className="int-scroll-container">
+          <div className="int-scroll-track">
+            {/* First set of logos */}
+            {logos.map((l, idx) => (
+              <div className="int-logo" key={`${l.name}-1-${idx}`}>
+                <Image src={l.src} alt={l.name} fill className="int-img" />
+              </div>
+            ))}
+            {/* Duplicate set for seamless loop */}
+            {logos.map((l, idx) => (
+              <div className="int-logo" key={`${l.name}-2-${idx}`}>
+                <Image src={l.src} alt={l.name} fill className="int-img" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

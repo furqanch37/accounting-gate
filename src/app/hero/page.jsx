@@ -20,6 +20,21 @@ export default function Hero() {
         <p className="hero-sub fade-anim" data-delay=".16s">Automate onboarding and tax workflows. Reduce client delays, ensure compliance, and win back billable time. Fully integrating into your existing systems.</p>
         <div className="hero-cta fade-anim" data-delay=".24s">
           <Link href="#" className="hero-btn">Get Started</Link>
+          <Link href="#" className="hero-btn-secondary">Watch Demo</Link>
+        </div>
+        <div className="hero-stats fade-anim" data-delay=".32s">
+          <div className="stat-item">
+            <div className="stat-number">50%</div>
+            <div className="stat-label">Faster Onboarding</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">30%</div>
+            <div className="stat-label">Time Saved</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">99%</div>
+            <div className="stat-label">Client Satisfaction</div>
+          </div>
         </div>
       </div>
     </section>

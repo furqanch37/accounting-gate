@@ -22,7 +22,15 @@ export default function Awards() {
             {logos.map((l) => (
               <div className="aw-cell" key={l.name}>
                 <div className="aw-logo">
-                  <Image src={l.src} alt={l.name} fill className="aw-img" />
+                  <Image
+                    src={l.src}
+                    alt={l.name}
+                    fill
+                    className="aw-img"
+                    loading="lazy"
+                    quality={70}
+                    sizes="(max-width: 560px) 120px, (max-width: 980px) 160px, 220px"
+                  />
                 </div>
               </div>
             ))}

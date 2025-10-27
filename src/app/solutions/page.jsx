@@ -49,22 +49,41 @@ function OnboardingPanel() {
       <div className="sl-cta fade-anim" data-delay=".18s"><Link href="#" className="sl-btn">Explore Onboarding</Link></div>
 
       <div className="sl-stage fade-anim" data-delay=".22s">
-        <div className="sl-rail" />
-        <div className="sl-left">
+        <div className="sl-stage-top">
           <StageTag icon={<FiUserPlus />} text="New customer request" ok />
-          <StageTag icon={<FiUploadCloud />} text="Client uploads docs" ok />
-        </div>
-        <div className="sl-center">
-          <div className="sl-card">
-            <div className="sl-card-chip">Automated checks</div>
-            <div className="sl-card-illus" />
-          </div>
-          <div className="sl-note">AML, KYC, SmartSearch & Companies House</div>
-          <div className="sl-bottom-icon" aria-hidden="true" />
-        </div>
-        <div className="sl-right">
           <StageTag icon={<FiFileText />} text="Populating your apps" ok />
-          <StageTag icon={<FiList />} text="Automatic LOE creation" ok />
+        </div>
+        
+        <div className="sl-stage-middle">
+          <div className="sl-stage-left">
+            <StageTag icon={<FiUploadCloud />} text="Client uploads docs" ok />
+            <div className="sl-ai-card">
+              <div className="sl-ai-label">Read by AI</div>
+              <div className="sl-ai-illus">
+                <div className="sl-ai-avatar" />
+                <div className="sl-ai-lines">
+                  <span className="sl-ai-line" />
+                  <span className="sl-ai-line" />
+                  <span className="sl-ai-line" />
+                </div>
+                <div className="sl-ai-accent" />
+              </div>
+            </div>
+          </div>
+          
+          <div className="sl-stage-center">
+            <div className="sl-card">
+              <div className="sl-card-chip">Automated checks</div>
+              <div className="sl-card-icon" aria-hidden="true">
+                <FiShield />
+              </div>
+            </div>
+            <div className="sl-note">AML, KYC, SmartSearch & Companies House</div>
+          </div>
+          
+          <div className="sl-stage-right">
+            <StageTag icon={<FiList />} text="Automatic LOE creation" ok />
+          </div>
         </div>
       </div>
     </div>

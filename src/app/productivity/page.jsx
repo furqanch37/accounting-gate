@@ -9,7 +9,7 @@ export default function Productivity() {
         <p className="pd-sub">Findings Based on Practice Gateway’s User Insights and Customer Feedback</p>
 
         <div className="pd-grid">
-          {/* Top row - two large cards */}
+          {/* First row - 3 cards */}
           <div className="pd-card pd-card-lg pd-card-left">
             <div className="pd-card-deco pd-deco-left" aria-hidden="true" />
             <div className="pd-metric"><strong>90% less</strong></div>
@@ -21,13 +21,13 @@ export default function Productivity() {
             <div className="pd-desc">effort on tax prep and submission</div>
           </div>
 
-          {/* Bottom row - three small cards */}
           <div className="pd-card pd-card-sm">
             <div className="pd-metric"><strong>60k+ hours</strong></div>
             <div className="pd-desc">saved chasing documents and
               missing client info</div>
           </div>
 
+          {/* Second row - 2 cards */}
           <div className="pd-card pd-card-sm">
             <div className="pd-metric"><strong>100k+ hours</strong></div>
             <div className="pd-desc">saved organising and accessing
