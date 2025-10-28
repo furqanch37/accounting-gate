@@ -130,9 +130,7 @@ function OnboardingPanel() {
               <span className="check-icon">✓</span>
             </p>
           </div>
-          <div className="typical-text">
-            <p>AML, KYC, SmartSearch & Companies House</p>
-          </div>
+         
         </div>
 
         {/* 4 */}
