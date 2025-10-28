@@ -94,23 +94,26 @@
 }
 
 .why-card-illus {
-  height: 160px;
+  height: 180px;
   background-color: #0c1228;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: contain; /* show full image centered */
 }
 
 .why-illus-1 {
-  background-image: url('https://practicegateway.com/wp-content/uploads/2025/08/practice_1.png')
+  background-image: url('https://practicegateway.com/wp-content/uploads/2025/08/practice_1.png');
+  background-position: center center
 }
 
 .why-illus-2 {
-  background-image: url('https://practicegateway.com/wp-content/uploads/2025/08/practice_2.png')
+  background-image: url('https://practicegateway.com/wp-content/uploads/2025/08/practice_2.png');
+  background-position: center center
 }
 
 .why-illus-3 {
-  background-image: url('https://practicegateway.com/wp-content/uploads/2025/08/practice_3.png')
+  background-image: url('https://practicegateway.com/wp-content/uploads/2025/08/practice_3.png');
+  background-position: center center
 }
 
 @media (max-width: 980px) {
