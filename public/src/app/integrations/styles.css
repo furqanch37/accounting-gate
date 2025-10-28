@@ -1,0 +1,31 @@
+.int-root{padding:56px 16px 80px;background:var(--background)}
+.int-wrap{max-width:1160px;margin:0 auto;text-align:center}
+
+.int-badge{display:inline-flex;gap:8px;align-items:center;justify-content:center;height:26px;padding:0 10px;border-radius:999px;background:#fff;border:1px solid #ffd9c0;color:#ff6a00;font-size:12px;font-weight:700;margin-bottom:12px}
+.int-badge-icon{display:inline-block}
+
+.int-title{font-size:32px;line-height:1.25;margin:0 0 28px;color:#0f172a;font-weight:800}
+
+.int-scroll-container{overflow:hidden;width:100%;position:relative}
+.int-scroll-track{display:flex;gap:60px;align-items:center;animation:scroll-logos 20s linear infinite;width:max-content}
+.int-scroll-track:hover{animation-play-state:paused}
+.int-logo{position:relative;height:58px;width:180px;flex-shrink:0}
+.int-img{object-fit:contain;object-position:center}
+
+@keyframes scroll-logos{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+
+@media (max-width: 980px){
+  .int-title{font-size:26px}
+  .int-scroll-track{gap:40px}
+  .int-logo{height:46px;width:140px}
+}
+
+@media (max-width: 560px){
+  .int-title{font-size:22px}
+  .int-scroll-track{gap:32px}
+  .int-logo{height:40px;width:120px}
+  .int-br{display:none}
+}
