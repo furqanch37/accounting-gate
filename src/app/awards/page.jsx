@@ -14,6 +14,7 @@ export default function Awards() {
 
   return (
     <section className="aw-root" aria-labelledby="aw-title">
+      <div className="aw-bg" aria-hidden="true" />
       <div className="aw-wrap">
         <h2 id="aw-title" className="aw-title">Recognised for Innovation,<br className="aw-br" /> Trusted for Results</h2>
 

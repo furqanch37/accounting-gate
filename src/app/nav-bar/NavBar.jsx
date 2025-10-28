@@ -53,7 +53,9 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="nb-bg-accent nb-bg-accent-fixed" />
+      <div className="nb-bg-image">
+        <img src="/assests/bg-temp.png" alt="" />
+      </div>
       <header className="nb-shell" role="banner" ref={headerRef}>
         <div className="nb-inner">
           <Link href="#" className="nb-brand" aria-label="Practice Gateway home">

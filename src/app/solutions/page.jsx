@@ -42,47 +42,91 @@ export default function SolutionsTabs() {
 
 function OnboardingPanel() {
   return (
-    <div className="sl-panel">
-      <div className="sl-eyebrow fade-anim" data-delay="0s">Onboarding</div>
-      <h3 className="sl-title fade-anim" data-delay=".06s">Automate up to 90%<br className="sl-br" /> of manual onboarding tasks</h3>
-      <p className="sl-sub fade-anim" data-delay=".12s">Smart KYC/AML checks built in via SmartSearch.<br className="sl-br" />Reduce onboarding time by 5x with automated reminders and client‑friendly forms.</p>
-      <div className="sl-cta fade-anim" data-delay=".18s"><Link href="#" className="sl-btn">Explore Onboarding</Link></div>
-
-      <div className="sl-stage fade-anim" data-delay=".22s">
-        <div className="sl-stage-top">
-          <StageTag icon={<FiUserPlus />} text="New customer request" ok />
-          <StageTag icon={<FiFileText />} text="Populating your apps" ok />
+    <div className="onboarding-illustration">
+      <div className="content-description">
+        <h3 className="title-category fade-anim" data-delay="0s">Onboarding</h3>
+        <h2 className="title-block fade-anim" data-delay=".06s">Automate up to 90%<br />of manual onboarding tasks</h2>
+        <div className="typical-text fade-anim" data-delay=".12s">
+          <p>Smart KYC/AML checks built in via SmartSearch.<br />Reduce onboarding time by 5x with automated reminders and client-friendly forms.</p>
         </div>
-        
-        <div className="sl-stage-middle">
-          <div className="sl-stage-left">
-            <StageTag icon={<FiUploadCloud />} text="Client uploads docs" ok />
-            <div className="sl-ai-card">
-              <div className="sl-ai-label">Read by AI</div>
-              <div className="sl-ai-illus">
-                <div className="sl-ai-avatar" />
-                <div className="sl-ai-lines">
-                  <span className="sl-ai-line" />
-                  <span className="sl-ai-line" />
-                  <span className="sl-ai-line" />
-                </div>
-                <div className="sl-ai-accent" />
+        <Link href="#" className="btn fade-anim" data-delay=".18s">Explore Onboarding</Link>
+      </div>
+
+      <div className="onboarding-illustration-list">
+        <div className="onboarding-item onboarding-item-1 fade-anim" data-delay=".22s">
+          <div className="onboarding-item-row">
+            <div className="onboarding-item-icon">
+              <FiUserPlus />
+            </div>
+            <p className="onboarding-item-name">
+              <span>New customer request</span>
+              <span className="check-icon">✓</span>
+            </p>
+          </div>
+        </div>
+
+        <div className="onboarding-item onboarding-item-2 fade-anim" data-delay=".5s">
+          <div className="onboarding-item-row">
+            <div className="onboarding-item-icon">
+              <FiUploadCloud />
+            </div>
+            <p className="onboarding-item-name">
+              <span>Client uploads docs</span>
+              <span className="check-icon">✓</span>
+            </p>
+          </div>
+          <div className="typical-text">
+            <p>Read by AI</p>
+          </div>
+          <div className="anim-scan">
+            <div className="scan-container">
+              <div className="scan-avatar" />
+              <div className="scan-lines">
+                <span className="scan-line" />
+                <span className="scan-line" />
+                <span className="scan-line" />
               </div>
+              <div className="scan-accent" />
             </div>
           </div>
-          
-          <div className="sl-stage-center">
-            <div className="sl-card">
-              <div className="sl-card-chip">Automated checks</div>
-              <div className="sl-card-icon" aria-hidden="true">
-                <FiShield />
-              </div>
+        </div>
+
+        <div className="onboarding-item onboarding-item-3 fade-anim" data-delay="1s">
+          <div className="onboarding-item-row">
+            <div className="onboarding-item-icon">
+              <FiShield />
             </div>
-            <div className="sl-note">AML, KYC, SmartSearch & Companies House</div>
+            <p className="onboarding-item-name">
+              <span>Automated checks</span>
+              <span className="check-icon">✓</span>
+            </p>
           </div>
-          
-          <div className="sl-stage-right">
-            <StageTag icon={<FiList />} text="Automatic LOE creation" ok />
+          <div className="typical-text">
+            <p>AML, KYC, SmartSearch & Companies House</p>
+          </div>
+        </div>
+
+        <div className="onboarding-item onboarding-item-4 fade-anim" data-delay="1.5s">
+          <div className="onboarding-item-row">
+            <div className="onboarding-item-icon">
+              <FiList />
+            </div>
+            <p className="onboarding-item-name">
+              <span>Automatic LOE creation</span>
+              <span className="check-icon">✓</span>
+            </p>
+          </div>
+        </div>
+
+        <div className="onboarding-item onboarding-item-5 fade-anim" data-delay="2s">
+          <div className="onboarding-item-row">
+            <div className="onboarding-item-icon">
+              <FiFileText />
+            </div>
+            <p className="onboarding-item-name">
+              <span>Populating your apps</span>
+              <span className="check-icon">✓</span>
+            </p>
           </div>
         </div>
       </div>
@@ -92,19 +136,24 @@ function OnboardingPanel() {
 
 function TaxPanel() {
   return (
-    <div className="sl-panel sl-panel-alt">
-      <div className="sl-eyebrow fade-anim" data-delay="0s">Tax Automation</div>
-      <h3 className="sl-title fade-anim" data-delay=".06s">Save up to 70% of time<br className="sl-br" /> spent on tax returns</h3>
-      <p className="sl-sub fade-anim" data-delay=".12s">AI‑powered document extraction and auto‑entry. Integrates directly with HMRC, CCH, IRIS & more.</p>
-      <div className="sl-cta fade-anim" data-delay=".18s"><Link href="#" className="sl-btn">Explore Tax Automation</Link></div>
-
-      <div className="sl-tax-grid fade-anim" data-delay=".22s">
-        <div className="sl-tax-illus">
-          <Image src="/assests/solution-1.png" alt="Tax automation illustration" fill priority className="sl-tax-img" />
+    <div className="onboarding-illustration">
+      <div className="content-description">
+        <h3 className="title-category fade-anim" data-delay="0s">Tax Automation</h3>
+        <h2 className="title-block fade-anim" data-delay=".06s">Save up to 70% of time<br />spent on tax returns</h2>
+        <div className="typical-text fade-anim" data-delay=".12s">
+          <p>AI-powered document extraction and auto-entry.<br />Integrates directly with HMRC, CCH, IRIS & more.</p>
         </div>
-        <ul className="sl-tax-list">
-          <TaxItem icon={<FiTrendingUp />} text="Automatically pulls in prior‑year data" />
-          <TaxItem icon={<FiCpu />} text="Pre‑filled forms and AI document extraction" />
+        <Link href="#" className="btn fade-anim" data-delay=".18s">Explore Tax Automation</Link>
+      </div>
+
+      <div className="tax-automation-grid fade-anim" data-delay=".22s">
+        <div className="tax-illus-frame">
+          <Image src="/assests/solution-1.png" alt="Tax automation UI" fill priority className="tax-illus-img" />
+        </div>
+
+        <ul className="tax-features-list">
+          <TaxItem icon={<FiTrendingUp />} text="Automatically pulls in prior-year data" />
+          <TaxItem icon={<FiCpu />} text="Pre-filled forms and AI document extraction" />
           <TaxItem icon={<FiCheckCircle />} text="Automated validation checks" />
           <TaxItem icon={<FiUploadCloud />} text="Upload, verify, and categorise client tax info in seconds" />
           <TaxItem icon={<FiShield />} text="Digitally signed documents, secure and fast submissions" />
@@ -126,9 +175,9 @@ function StageTag({ icon, text, ok }) {
 
 function TaxItem({ icon, text }) {
   return (
-    <li className="sl-li">
-      <span className="sl-li-icon">{icon}</span>
-      <span className="sl-li-text">{text}</span>
+    <li className="tax-feature-item">
+      <span className="tax-feature-icon">{icon}</span>
+      <span className="tax-feature-text">{text}</span>
     </li>
   );
 }

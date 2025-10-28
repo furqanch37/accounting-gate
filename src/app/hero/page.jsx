@@ -3,7 +3,7 @@ import "./styles.css";
 
 export default function Hero() {
   return (
-    <section className="hero fade-anim" data-delay="0s" style={{position:'relative', overflow:'hidden'}}>
+    <section className="hero fade-anim" data-delay="0s">
       <div className="lines-overlay" aria-hidden="true">
         <span className="line l1"/>
         <span className="line l2"/>
@@ -14,26 +14,13 @@ export default function Hero() {
         <span className="line l7"/>
         <span className="line l8"/>
       </div>
-      <div className="hero-wrap">
-        <div className="hero-eyebrow fade-anim" data-delay="0s">More than an accountancy portal</div>
-        <h1 className="hero-title fade-anim" data-delay=".08s">Designed to Delight Clients. Built to Empower Accountants.</h1>
-        <p className="hero-sub fade-anim" data-delay=".16s">Automate onboarding and tax workflows. Reduce client delays, ensure compliance, and win back billable time. Fully integrating into your existing systems.</p>
-        <div className="hero-cta fade-anim" data-delay=".24s">
-          <Link href="#" className="hero-btn">Get Started</Link>
-          <Link href="#" className="hero-btn-secondary">Watch Demo</Link>
-        </div>
-        <div className="hero-stats fade-anim" data-delay=".32s">
-          <div className="stat-item">
-            <div className="stat-number">50%</div>
-            <div className="stat-label">Faster Onboarding</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-number">30%</div>
-            <div className="stat-label">Time Saved</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-number">99%</div>
-            <div className="stat-label">Client Satisfaction</div>
+      <div className="hero-container">
+        <div className="hero-wrap">
+          <div className="hero-eyebrow fade-anim" data-delay="0s">More than an accountancy portal</div>
+          <h1 className="hero-title fade-anim" data-delay=".08s">Designed to Delight Clients. Built to Empower Accountants.</h1>
+          <p className="hero-sub fade-anim" data-delay=".16s">Automate onboarding and tax workflows. Reduce client delays, ensure compliance, and win back billable time. Fully integrating into your existing systems.</p>
+          <div className="hero-cta fade-anim" data-delay=".24s">
+            <Link href="#" className="hero-btn">Get Started</Link>
           </div>
         </div>
       </div>

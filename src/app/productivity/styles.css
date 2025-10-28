@@ -4,10 +4,10 @@
 .pd-title{font-size:36px;line-height:1.25;margin:0 0 10px;font-weight:800}
 .pd-sub{color:#9ca3b4;margin:0 0 32px;font-size:14px}
 
-.pd-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pd-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
 .pd-card{position:relative;background:rgba(15,19,32,0.6);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:40px 32px;text-align:center;overflow:hidden;backdrop-filter:blur(8px);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:140px}
-.pd-card-lg{grid-column:span 1}
-.pd-card-sm{grid-column:span 1}
+.pd-card-lg{grid-column:span 3}
+.pd-card-sm{grid-column:span 2}
 .pd-metric{font-size:48px;line-height:1.1;font-weight:800;color:#fff}
 .pd-metric strong{font-weight:800}
 .pd-desc{color:#b4bac9;margin-top:12px;font-size:15px;line-height:1.4}

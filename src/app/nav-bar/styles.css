@@ -1,12 +1,13 @@
 .nb-root {
   position: relative;
   min-height: 100vh;
-  background: var(--background);
+  background: #f1f2f5;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px
+  padding: 0
 }
+
 
 .nb-bg-accent {
   position: absolute;
@@ -31,38 +32,46 @@
 
 .nb-shell {
   width: 100%;
-  max-width: 1160px;
-  border-radius: 26px;
-  background: #fff;
-  border: 1px solid #eef0f3;
-  box-shadow: 0 4px 16px rgba(16, 24, 40, .06);
+  max-width: 1248px;
+  padding: 0 24px;
+  margin: 0 auto;
   position: relative;
-  z-index: 1;
-  margin: 16px auto;
   overflow: visible
 }
 
-/* Navbar-only ribbon background */
-.nb-shell::before {
-  content: "";
-  position: absolute;
-  top: -12px;
-  right: -12px;
-  width: clamp(320px, 40vw, 720px);
-  height: clamp(140px, 18vw, 260px);
-  background: url('/assests/bg-temp.png') top right / contain no-repeat;
-  pointer-events: none;
+.nb-bg-image {
+  position: fixed;
+  top: 0;
+  right: 0;
   z-index: 0;
+  width: 21.875%;
+  max-width: 315px;
+  height: 700px;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.nb-bg-image img {
+  border: none;
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .nb-inner {
-  height: 72px;
-  padding: 0 20px;
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
-  gap: 20px;
-  position: relative;
-  z-index: 1
+  justify-content: space-between;
+  padding: 10px 10px 10px 20px;
+  border: 1px solid #e4e4e7;
+  background-color: #fff;
+  border-radius: 1000px;
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,.05);
+  height: 65px;
+  margin: 24px 0;
 }
 
 .nb-brand {
@@ -192,7 +201,6 @@
   top: -6px;
   width: calc(100% + 24px);
   height: 56px;
-  background: linear-gradient(90deg, #ffb300 0%, #ff6a00 50%, #e5003a 100%);
   filter: saturate(110%);
   border-radius: 999px;
   z-index: -1;
